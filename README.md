@@ -35,8 +35,6 @@ App
 * It should have a bound `addNote(note)` method that adds a note to `state.notes`
   * each note that gets added should have the following data
     * `id`: always should contain the result of `uuid.v1()`
-    * `editing`: false by default
-    * `completed`: false by default
     * `content`: user provided content
     * `title`: user provided title
 * It should have a bound `removeNote(note)` method that removes a note from `state.notes` based on its `id`
@@ -49,7 +47,7 @@ App
 
 ###### NoteItem
 * should display the notes content and title
-* should display a delete button
+* should display a delete button (stretch goal)
   * `onClick` the note should be removed from the application state
 
 #### Documentation  
