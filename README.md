@@ -8,3 +8,4 @@ Add notes to a list of notes with id, content, and title.
  ![statemap](assets/state_map.jpg "statemap")
  ## Author
  Tom North
+ I <3 React
