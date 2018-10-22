@@ -4,8 +4,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div>
-        <h1>Notes</h1>
-        <h3>A note-taking web application built with React</h3>
+        <h1>A note-taking web application built with React</h1>
       </div>
     )
   }

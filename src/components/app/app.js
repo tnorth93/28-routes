@@ -2,6 +2,7 @@ import "@babel/polyfill";
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Dashboard from './dashboard/dashboard';
+import Home from '../home/home';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,8 +16,8 @@ class App extends React.Component {
           <div>
             <nav>
               <ul>
-                <li><Link to="/"> Home </Link></li>
-                <li><Link to="/dashboard"> Dashboard </Link></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/dashboard">Dashboard</Link></li>
               </ul>
             </nav>
             <Route exact path="/" component={Home}/>

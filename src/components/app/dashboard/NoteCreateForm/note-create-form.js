@@ -27,9 +27,7 @@ class NoteCreateForm extends React.Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <input type='text' placeholder='title' name='title' value={this.state.title} onChange={this.handleChange}/>
-          <label htmlFor='title'> Enter Search Term </label>
           <textarea placeholder='content' name='content' row='4' columns='4' value={this.state.content} onChange={this.handleChange}/>
-          <label htmlFor='content'>Type Content</label>
           <button type='submit'>Create Note</button>
         </form>
       );

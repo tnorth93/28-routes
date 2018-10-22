@@ -27,13 +27,28 @@ class Dashboard extends React.Component {
     }));
   };
 
+  handleUpdateNote = (note) => {
+    return this.setState((previousState => {
+      return { notes: previousState.notes.map((currentNote) => {
+        if (currentNote.id === note.id) {
+          currentNote = note;
+        }
+        return currentNote;
+        })}
+    }))
+  };
+
   render() {
     return (
       <section>
         <h2>Dashboard</h2>
         <p>Add a new Note</p>
-        <NoteCreateForm handleAddNote={this.handleAddNote}/>
-        <NoteList notes={this.state.notes} />
+        <NoteCreateForm handleAddNote={this.handleAddNote}
+        />
+        <NoteList notes={this.state.notes}
+        handleDeleteNote = {this.handleDeleteNote}
+        handleUpdateNote = {this.handleUpdateNote}
+        />
       </section>
     );
   }
