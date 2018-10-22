@@ -1,5 +1,6 @@
 import React from 'react';
-import Dashboard from '../dashboard';
+import PropTypes from 'prop-types';
+
 
 class NoteCreateForm extends React.Component {
   constructor(props) {
