@@ -1,5 +1,5 @@
 import React from 'react';
-import ExpenseForm from "../expense-form/expense-form";
+import NoteCreateForm from './NoteCreateForm/note-create-form';
 import uuid from 'uuid/v4';
 
 
@@ -25,7 +25,7 @@ class Dashboard extends React.Component {
       <section>
         <h2>Dashboard</h2>
         <p>Add a new Note</p>
-        <CreateNoteForm handleAddNote={this.handleAddNote}/>
+        <NoteCreateForm handleAddNote={this.handleAddNote}/>
 
       </section>
     );

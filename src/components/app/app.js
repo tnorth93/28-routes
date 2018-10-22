@@ -1,9 +1,7 @@
 import "@babel/polyfill";
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Header from '../header/header';
-import Dashboard from '../dashboard/dashboard';
-import Home from '../home/home';
+import Dashboard from './dashboard/dashboard';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +13,6 @@ class App extends React.Component {
       <main>
         <BrowserRouter>
           <div>
-            <Header/>
             <nav>
               <ul>
                 <li><Link to="/"> Home </Link></li>
