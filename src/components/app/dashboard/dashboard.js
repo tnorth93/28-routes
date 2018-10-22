@@ -21,6 +21,12 @@ class Dashboard extends React.Component {
     });
   };
 
+  handleDeleteNote = (note) => {
+    this.setState((previousState) => ({
+      notes: previousState.notes.filter(currentNote => currentNote.id !== note.id)
+    }));
+  };
+
   render() {
     return (
       <section>
