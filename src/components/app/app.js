@@ -19,7 +19,7 @@ class App extends React.Component {
             <nav>
               <ul>
                 <li><Link to="/"> Home </Link></li>
-                <li><Link to="/dashboard"> Dasboard </Link></li>
+                <li><Link to="/dashboard"> Dashboard </Link></li>
               </ul>
             </nav>
             <Route exact path="/" component={Home}/>
